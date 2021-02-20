@@ -39,8 +39,9 @@ class ConfigService {
       username: this.getValue('DB_USERNAME'),
       password: this.getValue('DB_PASSWORD'),
       database: this.getValue('DB_DATABASE_NAME'),
+      synchronize: true,
 
-      entities: ['**/*.entity{.ts,.js}'],
+      entities: ['dist/**/**.entity{.ts,.js}'],
 
       migrationsTableName: 'migration',
 

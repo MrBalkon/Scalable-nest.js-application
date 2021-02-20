@@ -6,6 +6,8 @@ services:
     build:
       context: .
       target: development
+    links:
+      - "postgres:database"
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
