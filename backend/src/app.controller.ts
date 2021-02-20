@@ -1,6 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
-import { HttpError } from '@infrastructure/error/HttpError'
 
 @Controller()
 export class AppController {
