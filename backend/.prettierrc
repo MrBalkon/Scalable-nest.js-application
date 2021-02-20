@@ -1,0 +1,9 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "rules": {
+    "prettier/prettier": ["error",{
+      "endOfLine": "auto"}
+    ]
+  }
+}
