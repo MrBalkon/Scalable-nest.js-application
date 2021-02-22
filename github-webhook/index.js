@@ -28,7 +28,7 @@ handler.on('error', function (err) {
     const current_date = dayjs().$d;
     const logs_string = `[${current_date}] Deploy ${event.payload.repository.name}`
     const result = execSync(`cd ./scripts || sh deploy.sh '${logs_string}'`)
-    console.log(result);
+    console.log(result.toString());
   })
   
   // handler.on('issues', function (event) {
