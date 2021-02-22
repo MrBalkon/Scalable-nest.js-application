@@ -24,6 +24,14 @@ $ docker-compose up
 $ npm run g:resource SERVICE_NAME
 ```
 
+## Autodeploy (Github webhooks)
+1) Register webhook at Github ( repository -> settings -> webhooks -> add new webhook )
+2) Change secret key at project/github-webhook/.env (key from webhook settings)
+3) Run index.js at project/github-webhook/index.js
+```bash
+$ npm run start
+```
+
 ## Api documentation (SWAGGER)
 
 [localhost:7071/api](localhost:7071/api)
