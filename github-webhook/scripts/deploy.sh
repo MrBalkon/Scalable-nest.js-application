@@ -1,5 +1,5 @@
 cd ../logs
-ls
+echo $1 >> ./deploy.logs
 cd ../../
 git stash
 git pull
