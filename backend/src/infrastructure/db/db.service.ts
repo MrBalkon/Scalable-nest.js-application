@@ -64,6 +64,6 @@ const configDBService = new ConfigService(process.env)
     'DB_USERNAME',
     'DB_PASSWORD',
     'DB_DATABASE_NAME'
-  ]);
+]);
 
 export { configDBService };
