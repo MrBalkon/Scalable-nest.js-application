@@ -17,7 +17,7 @@ http.createServer(function (req, res) {
 })
 
 handler.on('error', function (err) {
-    console.log('Error:', err.message)
+     console.log('Error:', err.message)
   })
   
   handler.on('push', function (event) {
