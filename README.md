@@ -1,4 +1,4 @@
-# Scalable-nest.js-application
+# Scalable nest.js application
 
 ## Project stack
 
