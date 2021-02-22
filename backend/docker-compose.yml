@@ -1,13 +1,13 @@
 version: '3.7'
 
 services:
-  futuru-backend:
+  sna-backend:
     container_name: ${PROJECT_NAME}-backend
     build:
       context: .
       target: ${NODE_ENV}
     links:
-      - "postgres:database"
+      - "sna-db:database"
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
@@ -17,11 +17,11 @@ services:
     env_file:
       - .env
     depends_on:
-      - postgres
+      - sna-db
     tty: true
 
-  postgres:
-    container_name: postgres
+  sna-db:
+    container_name: ${PROJECT_NAME}-postgres
     image: postgres:12
     environment:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
