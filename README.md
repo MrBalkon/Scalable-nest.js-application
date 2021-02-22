@@ -1,4 +1,4 @@
-# FUTURU
+# Scalable-nest.js-application
 
 ## Project stack
 
