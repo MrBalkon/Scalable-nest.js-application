@@ -30,11 +30,3 @@ handler.on('error', function (err) {
     const result = execSync(`cd ./scripts || sh deploy.sh '${logs_string}'`)
     console.log(result.toString());
   })
-  
-  // handler.on('issues', function (event) {
-  //   console.log('Received an issue event for %s action=%s: #%d %s',
-  //     event.payload.repository.name,
-  //     event.payload.action,
-  //     event.payload.issue.number,
-  //     event.payload.issue.title)
-  // })
