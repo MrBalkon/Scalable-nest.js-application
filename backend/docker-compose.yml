@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   futuru-backend:
-    container_name: futuru-backend
+    container_name: ${PROJECT_NAME}-backend
     build:
       context: .
       target: ${NODE_ENV}
@@ -13,7 +13,6 @@ services:
       - /usr/src/app/node_modules
     ports:
       - ${SERVER_PORT}:${SERVER_PORT}
-      - 9229:9229
     command: npm run start:debug
     env_file:
       - .env

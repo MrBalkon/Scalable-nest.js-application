@@ -8,7 +8,7 @@ import { LoggerMiddleware } from '@infrastructure/logger/logger.middleware';
 import { AuthCheckerMiddleware } from '@application/http/shared/auth/auth.middleware'
 
 @Module({
-  imports: [NewsModule,  ConfigModule.forRoot(), TypeOrmModule.forRoot(configDBService.getTypeOrmConfig()), CardModule],
+  imports: [NewsModule, CardModule, ConfigModule.forRoot(), TypeOrmModule.forRoot(configDBService.getTypeOrmConfig())],
   controllers: [],
   providers: [],
 })
