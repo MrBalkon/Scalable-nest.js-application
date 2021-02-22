@@ -1,4 +1,4 @@
- const http = require('http')
+const http = require('http')
 const createHandler = require('github-webhook-handler')
 require('dotenv').config();
 const handler = createHandler({ path: '/webhook', secret: process.env.WEBHOOK_HASH_SECRET })
