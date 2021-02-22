@@ -12,6 +12,7 @@
   "dependencies": {
     "dayjs": "^1.10.4",
     "dotenv": "^8.2.0",
-    "github-webhook-handler": "^1.0.0"
+    "github-webhook-handler": "^1.0.0",
+    "pm2": "^4.5.4"
   }
 }
