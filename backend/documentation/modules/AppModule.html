@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>backend documentation</title>
+        <title>futuru-backend documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="../" class="navbar-brand">backend documentation</a>
+            <a href="../" class="navbar-brand">futuru-backend documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -63,29 +63,41 @@
 <text text-anchor="start" x="429.73" y="-15.4" font-family="sans-serif" font-size="14.00"> &#160;Exports</text>
 <g id="clust1" class="cluster">
 <title>cluster_AppModule</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="175,-70 175,-195 321,-195 321,-70 175,-70"/>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="134,-70 134,-195 362,-195 362,-70 134,-70"/>
 </g>
-<g id="clust6" class="cluster">
-<title>cluster_AppModule_providers</title>
-<polygon fill="none" stroke="black" points="183,-78 183,-130 313,-130 313,-78 183,-78"/>
+<g id="clust3" class="cluster">
+<title>cluster_AppModule_imports</title>
+<polygon fill="none" stroke="black" points="142,-78 142,-130 354,-130 354,-78 142,-78"/>
 </g>
-<!-- AppService -->
+<!-- CardModule -->
 <g id="node1" class="node">
-<title>AppService</title>
-<ellipse fill="#fdb462" stroke="black" cx="248" cy="-104" rx="56.74" ry="18"/>
-<text text-anchor="middle" x="248" y="-99.8" font-family="Times,serif" font-size="14.00">AppService</text>
+<title>CardModule</title>
+<polygon fill="#8dd3c7" stroke="black" points="346.26,-122 343.26,-126 322.26,-126 319.26,-122 259.74,-122 259.74,-86 346.26,-86 346.26,-122"/>
+<text text-anchor="middle" x="303" y="-99.8" font-family="Times,serif" font-size="14.00">CardModule</text>
 </g>
 <!-- AppModule -->
-<g id="node2" class="node">
+<g id="node3" class="node">
 <title>AppModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="289.66,-187 286.66,-191 265.66,-191 262.66,-187 206.34,-187 206.34,-151 289.66,-151 289.66,-187"/>
-<text text-anchor="middle" x="248" y="-164.8" font-family="Times,serif" font-size="14.00">AppModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="290.66,-187 287.66,-191 266.66,-191 263.66,-187 207.34,-187 207.34,-151 290.66,-151 290.66,-187"/>
+<text text-anchor="middle" x="249" y="-164.8" font-family="Times,serif" font-size="14.00">AppModule</text>
 </g>
-<!-- AppService&#45;&gt;AppModule -->
+<!-- CardModule&#45;&gt;AppModule -->
 <g id="edge1" class="edge">
-<title>AppService&#45;&gt;AppModule</title>
-<path fill="none" stroke="black" d="M248,-122.11C248,-122.11 248,-140.99 248,-140.99"/>
-<polygon fill="black" stroke="black" points="244.5,-140.99 248,-150.99 251.5,-140.99 244.5,-140.99"/>
+<title>CardModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="black" d="M275.22,-122.11C275.22,-122.11 275.22,-140.99 275.22,-140.99"/>
+<polygon fill="black" stroke="black" points="271.72,-140.99 275.22,-150.99 278.72,-140.99 271.72,-140.99"/>
+</g>
+<!-- NewsModule -->
+<g id="node2" class="node">
+<title>NewsModule</title>
+<polygon fill="#8dd3c7" stroke="black" points="241.92,-122 238.92,-126 217.92,-126 214.92,-122 150.08,-122 150.08,-86 241.92,-86 241.92,-122"/>
+<text text-anchor="middle" x="196" y="-99.8" font-family="Times,serif" font-size="14.00">NewsModule</text>
+</g>
+<!-- NewsModule&#45;&gt;AppModule -->
+<g id="edge2" class="edge">
+<title>NewsModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="black" d="M224.44,-122.11C224.44,-122.11 224.44,-140.99 224.44,-140.99"/>
+<polygon fill="black" stroke="black" points="220.94,-140.99 224.44,-150.99 227.94,-140.99 220.94,-140.99"/>
 </g>
 </g>
 </svg>
@@ -126,41 +138,121 @@
         <div class="container-fluid module">
             <div class="row">
                 <div class="col-sm-3">
-                    <h3>Providers<a href="https://angular.io/api/core/NgModule#providers" target="_blank"
-                            title="Official documentation about module providers"><span class="icon ion-ios-information-circle-outline"></a></h3>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="../injectables/AppService.html">AppService</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h3>Controllers<a href="https://docs.nestjs.com/controllers" target="_blank" title="Official documentation about module controllers"><span
+                    <h3>Imports<a href="https://angular.io/api/core/NgModule#imports" target="_blank" title="Official documentation about module imports"><span
                                 class="icon ion-ios-information-circle-outline"></a></h3>
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <a href="../controllers/AppController.html">AppController</a>
+                            <a href="../modules/CardModule.html">CardModule</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="../modules/NewsModule.html">NewsModule</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
 
+        <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="configure"></a>
+                    <span class="name">
+                        <b>
+                            configure
+                        </b>
+                        <a href="#configure"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>configure(consumer: MiddlewareConsumer)</code>
+                </td>
+            </tr>
 
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="16"
+                            class="link-to-prism">src/app.module.ts:16</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>consumer</td>
+                                    <td>
+                                            <code>MiddlewareConsumer</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
     </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Module } from &#x27;@nestjs/common&#x27;;
-import { AppController } from &#x27;./app.controller&#x27;;
-import { AppService } from &#x27;./app.service&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NewsModule } from &#x27;@application/http/news/news.module&#x27;
+import { Module, NestModule, MiddlewareConsumer } from &#x27;@nestjs/common&#x27;;
+import { CardModule } from &#x27;@application/http/card/card.module&#x27;;
+import { ConfigModule } from &#x27;@nestjs/config&#x27;;
+import { TypeOrmModule } from &#x27;@nestjs/typeorm&#x27;;
+import { configDBService } from &#x27;./infrastructure/db/db.service&#x27;
+import { LoggerMiddleware } from &#x27;@infrastructure/logger/logger.middleware&#x27;;
+import { AuthCheckerMiddleware } from &#x27;@application/http/shared/auth/auth.middleware&#x27;
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [NewsModule,  ConfigModule.forRoot(), TypeOrmModule.forRoot(configDBService.getTypeOrmConfig()), CardModule],
+  controllers: [],
+  providers: [],
 })
-export class AppModule {}
+export class AppModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer
+      .apply(AuthCheckerMiddleware, LoggerMiddleware)
+      .forRoutes(&#x27;/&#x27;);
+  }
+}
 </code></pre>
     </div>
 </div>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>backend documentation</title>
+        <title>futuru-backend documentation</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +13,7 @@
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
-            <a href="./" class="navbar-brand">backend documentation</a>
+            <a href="./" class="navbar-brand">futuru-backend documentation</a>
             <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
@@ -67,22 +67,22 @@
         <tr class="low">
             <td>
                 <!-- miscellaneous -->
-                <a href="./controllers/AppController.html">src/app.controller.ts</a>
+                <a href="./controllers/CardController.html">src/application/http/card/card.controller.ts</a>
             </td>
             <td>controller</td>
-            <td>AppController</td>
+            <td>CardController</td>
             <td align="right" data-sort="0">
                 <span class="coverage-percent">0 %</span>
-                <span class="coverage-count">(0/2)</span>
+                <span class="coverage-count">(0/1)</span>
             </td>
         </tr>
         <tr class="low">
             <td>
                 <!-- miscellaneous -->
-                <a href="./injectables/AppService.html">src/app.service.ts</a>
+                <a href="./injectables/CardService.html">src/application/http/card/card.service.ts</a>
             </td>
             <td>injectable</td>
-            <td>AppService</td>
+            <td>CardService</td>
             <td align="right" data-sort="0">
                 <span class="coverage-percent">0 %</span>
                 <span class="coverage-count">(0/2)</span>
@@ -91,13 +91,181 @@
         <tr class="low">
             <td>
                 <!-- miscellaneous -->
-                <a href="./classes/Logger.html">src/infrastructure/logger/index.ts</a>
+                <a href="./controllers/NewsController.html">src/application/http/news/news.controller.ts</a>
+            </td>
+            <td>controller</td>
+            <td>NewsController</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/1)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./injectables/NewsService.html">src/application/http/news/news.service.ts</a>
+            </td>
+            <td>injectable</td>
+            <td>NewsService</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./injectables/AuthCheckerMiddleware.html">src/application/http/shared/auth/auth.middleware.ts</a>
+            </td>
+            <td>injectable</td>
+            <td>AuthCheckerMiddleware</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./interfaces/IRequestError.html">src/application/http/shared/interfaces/IRequestError.ts</a>
+            </td>
+            <td>interface</td>
+            <td>IRequestError</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./interfaces/IRequestResult.html">src/application/http/shared/interfaces/IRequestResult.ts</a>
+            </td>
+            <td>interface</td>
+            <td>IRequestResult</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./classes/CreateCardDto.html">src/domain/card/dtos/createCardDto.ts</a>
+            </td>
+            <td>class</td>
+            <td>CreateCardDto</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./classes/Card.html">src/domain/card/entities/card.entity.ts</a>
+            </td>
+            <td>class</td>
+            <td>Card</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/7)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./classes/News.html">src/domain/news/entities/news.entity.ts</a>
+            </td>
+            <td>class</td>
+            <td>News</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./guards/RestfulCrudRoleGuard.html">src/infrastructure/auth/roles.guard.ts</a>
+            </td>
+            <td>guard</td>
+            <td>RestfulCrudRoleGuard</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./classes/ConfigService.html">src/infrastructure/db/db.service.ts</a>
+            </td>
+            <td>class</td>
+            <td>ConfigService</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/7)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./miscellaneous/variables.html#configDBService">src/infrastructure/db/db.service.ts</a>
+            </td>
+            <td>variable</td>
+            <td>configDBService</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/1)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./classes/HttpError.html">src/infrastructure/error/HttpError.ts</a>
+            </td>
+            <td>class</td>
+            <td>HttpError</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/3)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./injectables/LoggerMiddleware.html">src/infrastructure/logger/logger.middleware.ts</a>
+            </td>
+            <td>injectable</td>
+            <td>LoggerMiddleware</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./classes/Logger.html">src/infrastructure/logger/logger.service.ts</a>
             </td>
             <td>class</td>
             <td>Logger</td>
             <td align="right" data-sort="0">
                 <span class="coverage-percent">0 %</span>
-                <span class="coverage-count">(0/2)</span>
+                <span class="coverage-count">(0/8)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./miscellaneous/variables.html#SwaggerConfig">src/infrastructure/swagger/configuration.ts</a>
+            </td>
+            <td>variable</td>
+            <td>SwaggerConfig</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/1)</span>
             </td>
         </tr>
         <tr class="low">
@@ -107,6 +275,42 @@
             </td>
             <td>function</td>
             <td>bootstrap</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/1)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./controllers/__module__.html">tools/templates/application/http/__controller__.controller.ts</a>
+            </td>
+            <td>controller</td>
+            <td>__module__</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/1)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./injectables/__module__.html">tools/templates/application/http/__service__.service.ts</a>
+            </td>
+            <td>injectable</td>
+            <td>__module__</td>
+            <td align="right" data-sort="0">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/1)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <!-- miscellaneous -->
+                <a href="./classes/__entity__.html">tools/templates/domain/__entity__.entity.ts</a>
+            </td>
+            <td>class</td>
+            <td>__entity__</td>
             <td align="right" data-sort="0">
                 <span class="coverage-percent">0 %</span>
                 <span class="coverage-count">(0/1)</span>

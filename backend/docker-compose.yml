@@ -5,7 +5,7 @@ services:
     container_name: futuru-backend
     build:
       context: .
-      target: development
+      target: ${NODE_ENV}
     links:
       - "postgres:database"
     volumes:
@@ -14,7 +14,7 @@ services:
     ports:
       - ${SERVER_PORT}:${SERVER_PORT}
       - 9229:9229
-    command: npm run start:dev
+    command: npm run start:debug
     env_file:
       - .env
     depends_on:
@@ -28,11 +28,7 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_USER: ${DB_USERNAME}
       POSTGRES_DB: ${DB_DATABASE_NAME}
-      PG_DATA: /var/lib/postgresql/data
     expose:
       - 5432
     volumes:
-      - pgdata:/var/lib/postgresql/data
-
-volumes:
-  pgdata:
+      - ./pgdata:/var/lib/postgresql/data

@@ -41,7 +41,7 @@ class ConfigService {
       database: this.getValue('DB_DATABASE_NAME'),
       synchronize: true,
 
-      entities: ['dist/**/**.entity{.ts,.js}'],
+      entities: ['dist/domain/**/**.entity{.ts,.js}'],
 
       migrationsTableName: 'migration',
 

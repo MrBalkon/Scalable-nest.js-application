@@ -20,8 +20,9 @@ export class Logger {
         console.log("[" + chalk.green("DB") + `][` + chalk.gray.bold(dayjs().format("HH:mm:ss")) + `]  ${message}`);
     }
 
-    public static request(message: string): void {
-        console.log("[" + chalk.bgWhite.black("REQUEST") + `][` + chalk.gray.bold(dayjs().format("HH:mm:ss")) + `]  ${message}`);
+    public static request(method: string, url: string, statusCode: number, contentLength: string, userAgent: string, ip: string): void {
+        const isRequestError = ![1,2,3].includes(+(`${statusCode}`[0]));
+        console.log("[" + (isRequestError ? chalk.red("REQUEST ERROR") : chalk.bgWhite.black("REQUEST")) + `] ${method} ${url} ${!isRequestError ? chalk.green(statusCode) : chalk.red(statusCode)} ${contentLength} - ${userAgent} ${ip}`)
     }
 
     public static title(message: string): void{

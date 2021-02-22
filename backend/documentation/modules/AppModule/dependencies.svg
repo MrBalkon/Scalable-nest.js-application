@@ -22,29 +22,41 @@
 <text text-anchor="start" x="429.73" y="-15.4" font-family="sans-serif" font-size="14.00"> &#160;Exports</text>
 <g id="clust1" class="cluster">
 <title>cluster_AppModule</title>
-<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="175,-70 175,-195 321,-195 321,-70 175,-70"/>
+<polygon fill="none" stroke="black" stroke-dasharray="1,5" points="134,-70 134,-195 362,-195 362,-70 134,-70"/>
 </g>
-<g id="clust6" class="cluster">
-<title>cluster_AppModule_providers</title>
-<polygon fill="none" stroke="black" points="183,-78 183,-130 313,-130 313,-78 183,-78"/>
+<g id="clust3" class="cluster">
+<title>cluster_AppModule_imports</title>
+<polygon fill="none" stroke="black" points="142,-78 142,-130 354,-130 354,-78 142,-78"/>
 </g>
-<!-- AppService -->
+<!-- CardModule -->
 <g id="node1" class="node">
-<title>AppService</title>
-<ellipse fill="#fdb462" stroke="black" cx="248" cy="-104" rx="56.74" ry="18"/>
-<text text-anchor="middle" x="248" y="-99.8" font-family="Times,serif" font-size="14.00">AppService</text>
+<title>CardModule</title>
+<polygon fill="#8dd3c7" stroke="black" points="346.26,-122 343.26,-126 322.26,-126 319.26,-122 259.74,-122 259.74,-86 346.26,-86 346.26,-122"/>
+<text text-anchor="middle" x="303" y="-99.8" font-family="Times,serif" font-size="14.00">CardModule</text>
 </g>
 <!-- AppModule -->
-<g id="node2" class="node">
+<g id="node3" class="node">
 <title>AppModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="289.66,-187 286.66,-191 265.66,-191 262.66,-187 206.34,-187 206.34,-151 289.66,-151 289.66,-187"/>
-<text text-anchor="middle" x="248" y="-164.8" font-family="Times,serif" font-size="14.00">AppModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="290.66,-187 287.66,-191 266.66,-191 263.66,-187 207.34,-187 207.34,-151 290.66,-151 290.66,-187"/>
+<text text-anchor="middle" x="249" y="-164.8" font-family="Times,serif" font-size="14.00">AppModule</text>
 </g>
-<!-- AppService&#45;&gt;AppModule -->
+<!-- CardModule&#45;&gt;AppModule -->
 <g id="edge1" class="edge">
-<title>AppService&#45;&gt;AppModule</title>
-<path fill="none" stroke="black" d="M248,-122.11C248,-122.11 248,-140.99 248,-140.99"/>
-<polygon fill="black" stroke="black" points="244.5,-140.99 248,-150.99 251.5,-140.99 244.5,-140.99"/>
+<title>CardModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="black" d="M275.22,-122.11C275.22,-122.11 275.22,-140.99 275.22,-140.99"/>
+<polygon fill="black" stroke="black" points="271.72,-140.99 275.22,-150.99 278.72,-140.99 271.72,-140.99"/>
+</g>
+<!-- NewsModule -->
+<g id="node2" class="node">
+<title>NewsModule</title>
+<polygon fill="#8dd3c7" stroke="black" points="241.92,-122 238.92,-126 217.92,-126 214.92,-122 150.08,-122 150.08,-86 241.92,-86 241.92,-122"/>
+<text text-anchor="middle" x="196" y="-99.8" font-family="Times,serif" font-size="14.00">NewsModule</text>
+</g>
+<!-- NewsModule&#45;&gt;AppModule -->
+<g id="edge2" class="edge">
+<title>NewsModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="black" d="M224.44,-122.11C224.44,-122.11 224.44,-140.99 224.44,-140.99"/>
+<polygon fill="black" stroke="black" points="220.94,-140.99 224.44,-150.99 227.94,-140.99 220.94,-140.99"/>
 </g>
 </g>
 </svg>
