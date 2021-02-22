@@ -29,6 +29,8 @@ $ npm run g:resource SERVICE_NAME
 2) Change secret key at project/github-webhook/.env (key from webhook settings)
 3) Run index.js at project/github-webhook/index.js
 ```bash
+$ cd ./github-webhook
+$ npm i
 $ npm run start
 ```
 
