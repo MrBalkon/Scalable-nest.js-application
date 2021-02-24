@@ -1,0 +1,5 @@
+node_modules
+tools
+/node_modules
+pg_data
+pgdata
