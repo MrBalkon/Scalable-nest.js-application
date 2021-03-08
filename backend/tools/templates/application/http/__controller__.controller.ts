@@ -18,6 +18,7 @@ import { RestfulCrudRoleGuard } from '@infrastructure/auth/roles.guard';
         },
     },
 })
+@ApiTags("__module__(kebabCase)")
 @Controller("__module__(kebabCase)")
 @UseGuards( new RestfulCrudRoleGuard({
   readAllRoles: [Role.Admin, Role.User],
